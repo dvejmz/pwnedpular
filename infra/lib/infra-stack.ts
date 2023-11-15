@@ -19,7 +19,7 @@ export class PasswordsStack extends cdk.Stack {
       entry: `${__dirname}/../../handler.js`,
       architecture: lambda.Architecture.ARM_64,
       memorySize: 2048,
-      runtime: lambda.Runtime.NODEJS_16_X,
+      runtime: lambda.Runtime.NODEJS_20_X,
       timeout: cdk.Duration.seconds(20),
       logRetention: RetentionDays.ONE_DAY,
     });
